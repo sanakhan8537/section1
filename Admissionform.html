@@ -9,7 +9,7 @@
     <h1>Student Admission Form</h1>
     <!-- form is used to take more than one input from user -->
     <form>
-     <label for="">Student Name</label>
+     <label for="name">Student Name</label>
      <input type="text" id="name" required minilength="3">
      <!-- label means bagal me box ke and input is the box jaha pe type text likh skte hai and minilength is the minimum length that you can store only 3 character-->
 
@@ -27,6 +27,8 @@
      <input type="radio" name="gender">Male
      <input type="radio" name="gender">Female
      <!-- type radio means it will give option as we have given either male or female but disadavantage is that we can select both option so for that give name=gender which means you can select only one option at a time-->
+      <br>
+      <br>
       <label for="">Select Course</label>
       <select>
         <option>MERN Stack Development</option>
@@ -63,7 +65,7 @@
       </details>
       <!-- mark tag jaha lgega wo highlight ho jata hai -->
       <!-- details tag have been newly added in html -->
-       <button type="submit">Submitt</button>
+       <button type="submit">Submit</button>
        <!-- type submit means it will submit otherwise it will still run without writing type sumit  -->
     </form>
 </body>
