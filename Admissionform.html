@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <!-- form is used to take more than one input from user -->
+    <form>
+     <label for="">Student Name</label>
+     <input type="text" id="name" required minilength="3">
+     <!-- label means bagal me box ke and input is the box jaha pe type text likh skte hai and minilength is the minimum length that you can store only 3 character-->
+
+     <br>
+     <br>
+     <label for="email">Email Address</label>
+     <input type="email" id="email">
+     <br>
+     <br>
+     <label for="dob">Date of Birth</label>
+     <input type="date" id="dob">
+     <br>
+     <br>
+     <label for="">Gender</label>
+     <input type="radio" name="gender">Male
+     <input type="radio" name="gender">Female
+     <!-- type radio means it will give option as we have given either male or female but disadavantage is that we can select both option so for that give name=gender which means you can select only one option at a time-->
+      <label for="">Select Course</label>
+      <select>
+        <option>MERN Stack Development</option>
+        <option>Data Analytics</option>
+        <option>Data Science</option>
+        <option>Cyber Security</option>
+        <option>Data Structure</option>
+     </select>
+      <!-- so from select which is select course there you have mentions multiple options where you can select options --> -->
+      <br>
+      <br>
+      <label for="">College Name</label>
+      <input type="text" list="college">
+      <datalist id="college">
+        <option>MGIMT</option>
+        <option>Integral University</option>
+        <option>Christian College</option>
+        <option>MGCPS</option>
+        <option>ITM</option>
+      </datalist>
+      <!-- datalist is a new tag which have been newly added in html and also connect datalist with a input otherwise it will not show option so give id=collegewhich is list=college-->
+      <br><br>
+      <label for="">Address</label>
+      <textarea rows="5" cols="20"></textarea>
+      <!-- textarea is used to take multiple line input where rows and cols where you can give rows as 5 which means 5 rows at a time will be visible and cols as 20 which means 20 character  -->
+      <br><br>
+      <input type="checkbox">
+      <label for="">I accept Terms and Conditions</label>
+      <!-- as a checkbox where tick or dont tick -->
+      <br><br>
+      <details>
+        <summary>View Terms and Conditions</summary>
+        <p>Lorem ipsum dolor, <mark> sit amet consectetur adipisicing elit. </mark>Nemo dignissimos fugit cupiditate repudiandae, eligendi ratione facilis blanditiis sint minus sed. Inventore delectus optio porro nisi! Totam quis ad nobis voluptate.</p>
+      </details>
+      <!-- mark tag jaha lgega wo highlight ho jata hai -->
+      <!-- details tag have been newly added in html -->
+       <button type="submit">Submit</button>
+       <!-- type submit means it will submit otherwise it will still run without writing type sumit  -->
+    </form>
+</body>
+</html>
+<!-- through control+space you can see many options in type= -->
+      <!-- through alt+shift+down orup arrow to copy lines -->
