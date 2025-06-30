@@ -1,0 +1,120 @@
+<!-- ...............................................................lecture 5 creating a minimal(normal)login card -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ..............................................card ko style krenge mtlb jo dabbe me login page rehta hai uss dabbe ko banenge -->
+ <!-- (element box , padding , border , margin) ye aese sequence me hota hai -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <!-- this is a link of googlr font in this vs code google font is already instaall so click ctrl+shift+p you will see in seaction 
+  options click on google font link insrt and then you will see many fonts option choose any one very popular is roboto click and you will automatically recieve 
+  the link or you can direct copy the link from googele from site google font -->
+
+    <style>
+        *{
+            font-family: Roboto;
+            /* by this will apply to whole page the font */
+        }
+        .card{
+            /* border: 2px solid red; this one is for card border */
+            /* dabba  */
+            width: 20%;
+            border-radius: 10px;
+            /* border radius to make corner round */
+            padding: 30px;
+            /* padding means border ke andar space */
+            /* jitni padding bdhegi width uthna bdhega so this is kind of disadvantage so for this we use box-sizing */
+            box-sizing: border-box;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.508);
+            /* in box shadow we give x-offset which tell show right chahiye ya left for left give in minus and for right give in plus same for y-offset 
+            y-offset means shadow upar ya neeche blur means kitna blur chahiye or for sharf give 0 size and color */
+            background-color: white;
+        }
+
+    /*dabbe ko center me lane k liye jispe kaam ho ra hai uske parent tag ko lenge as card div me hai aur div body me to uska parent tag body hua */
+    body{
+        display: flex;
+        /* display flex lagane k bad he justify content use kr skte hai */
+        justify-content: center;
+        /* content will shift in center */
+        align-items: center;
+        height: 100vh;
+        /* vh means view height ab jo hai align item center center me aaegaa jab 100vh rhega which will come vertically center*/
+        background-image: linear-gradient(0deg , #ffb6b6 , #bcbcff);
+    }
+
+    .form-title{
+        text-align: center;
+        margin: 30px 0;
+        /* 30px on top bottom and 0 for left right and if give 4 value then top botton left right */
+    }
+
+    .text-input{
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        /* through this dono trf same space aa jaega */
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .submit-btn{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5 px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        margin-top: 30 px;
+    }
+
+        /* link jo dono anchor tag me same hai aur forgot link and signup link ko style denge */
+        .link{
+            color: blueviolet;
+            text-decoration: none;
+            display: block;
+        }
+
+        .forgot-link{
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="form-title">Login Form</h2>
+
+        <form>
+            <label for="">Email Address</label>
+            <input type="text" class="text-input">
+            
+
+            <label for="">Password</label>
+            <input type="text" class="text-input">
+            
+            <a href="" class="link Forgot-link">Forgot Password</a>
+            <!-- here we are using two classes together which is link and forget link do anchor tag use hua but dono me link class same hai-->
+
+            <button class="submit-btn">Submit</button>
+
+            <a href="" class="link signup-link">Not Registered Yet?</a>
+
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* ..............................................................................lecture 4 */
+/* Internal css-same cheez inline wali alag se iss file me deni hoti hai */
+.btn{
+    background-color: aqua;
+    border: 2px solid darkcyan;
+    color: darkcyan;
+    padding: 10px;
+}

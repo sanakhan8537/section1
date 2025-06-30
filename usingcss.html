@@ -1,0 +1,90 @@
+<!-- ..............................................................................lecture 4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+    <!-- example of name selector -->
+
+    <style>
+        h1{
+            color: blue;
+            text-decoration: underline;
+        }
+        /* example of class selector */
+        /* . we use in class selector and on class id which is myclass */
+
+        .myclass{
+            color: green;
+            text-align: center;
+            background-color: yellow;
+        }
+        /* example of ID selector 
+        here we use # in id selector on the id which is myid */
+
+        #myid{
+            color: purple;
+            border: 2px solid purple;
+        }
+        /* doing for button and appling all the three selector where only the highest priority selector will work */
+
+        .btn-class{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            transition-duration: 300ms;
+        }
+        button{
+            background-color: blue;
+        }
+        /* it will not apply because higher priority is on class selector so it will run by class selector  */
+
+        #btn-id{
+            background-color:crimson ;
+        }
+        /* now the highest priority is on id selector insort first is id selector second is class selector and third is class selector */
+    /* Most Important!!!!! if we use !important in any selector then that selector will have the highest priority 
+    like background-color:blue !important*/
+
+    .btn-class:hover{
+        transform: scale(1.1);
+    }
+
+    .btn-class:active{
+    background-color:red;
+    }
+    /* active and hover are pseudo codes */
+    
+    </style>
+    <!-- for internal css link first -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- UI/UX-UI is a user interface which is used to give design to a website position ,design,color etc comes in UI whereas in UX it is used to make attractive the website it seek attention of the user to the website
+    and try to complete its goal of user to visit website -->
+    <!-- css-inlie css,internal css and external by making it more attractive and seeking attention --> 
+
+     <p style="color: red">Inline CSS is used to style individual element at once</p> 
+     <h1>Internal CSS is used to style entire page at once</h1>
+     <!-- selector-name selector,class selector,id selector -->
+
+      <h1 class="myclass">Name selector is used to select elements by thier tag name</h1>
+      <h2 class="myclass">Class selector is used to select elements by thier class name </h2>
+      <!-- myclass ya my-class isko ek he class consider kiya jaega but agar my class mltb beech me space aa jata h to wo do class consider hota hai -->
+       <!-- between name selector and class selector when both are being used at same tag then it will show the result on the basis of class selector 
+        because class selector priority is higher then name selector -->
+
+        <h3 id="myid">ID selector is used to select elements by their id name</h3>
+    <button class="btn-class" id="btn-id">Submit</button>
+    <button class="btn">Hello</button>
+    <!-- <button class="btn btn-class"></button> -->
+    <!-- ye button class me do id di gyi hai btn aur btn-class to dono me se sabse pehle konsa implement hoga is 
+    second wala pehle implement hoga which is btn-class everytime -->
+
+</body>
+</html>
