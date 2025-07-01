@@ -1,0 +1,55 @@
+<!-- .....................................................................lecture 6 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gride</title>
+     <style>
+        .child{
+            background-color: skyblue;
+            color: blue;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+        .parent{
+            display: grid;
+            /* grid-template-columns: 300px 200px 150px; */
+            /* grid is easier then flex and is most used then flex */
+            /* ye teen column banaega jiska size of 300px 200px and 100px aur baki 3 ke bar wale column ussi heesab se
+            adjust hote chale jaenge*/
+            grid-template-columns: 1fr 1fr 1fr;
+            /* this is the ratio we give 1:1:1 */
+            /* gap: 10px; */
+            /* ye ratio ke beech me 10px ka gap dega */
+            row-gap: 20px;
+            column-gap: 40px;
+            /* row aur column me alag alag gap bhi de skta hai */
+        }
+        </style>
+ </head>
+ <body>
+    <div>
+        <div class="parent">
+        <div class="child">0o
+            <h3>Child 1</h3>
+        </div>
+        <div class="child">
+            <h3>Child 2</h3>
+        </div>
+        <div class="child">
+            <h3>Child 3</h3>
+        </div>
+        <div class="child">
+            <h3>Child 4</h3>
+        </div>
+        <div class="child">
+            <h3>Child 5</h3>
+        </div>
+        <div class="child">
+            <h3>Child 6</h3>
+        </div>
+    </div>
+    </div>
+ </body>
+ </html>

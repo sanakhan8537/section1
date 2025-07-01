@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: Roboto;
+        }
+        .card{
+            width: 30%;
+            border-radius: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.508);
+            background-color: white;
+        }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       background-image:url('https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg');
+    }
+
+    .form-title{
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .text-input{
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .Join-btn{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5 px;
+        background-color: blue;
+        color: white;
+        border: none;
+        margin-top: 30 px;
+    }
+    .Continue-btn{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5 px;
+        background-color:blue;
+        color: white;
+        border: none;
+        margin-top: 30 px;
+    }
+     .link{
+            color: blueviolet;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        .Forget-link{
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .myclass{
+            color:lightseagreen;
+            text-align: center;
+        }
+        /* these are for the word to insert in between a strait line */
+        .or-divider{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .or-divider::before,
+        .or-divider::after{
+            content: "";
+            flex:1;
+            border-bottom: 1px solid #ccc;
+        }
+        .or-divider:not(:empty)::before{
+            margin-right: .75em;
+        }
+        .or-divider:not(:empty)::after{
+            margin-left: .75em;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="form-title">Sign up Form</h2>
+
+
+            <label for="">First Name</label>
+            <input type="text" class="text-input">
+            
+
+            <label for="">Last Name</label>
+            <input type="text" class="text-input">
+            
+            <label for="">Email</label>
+            <input type="text" class="text-input">
+
+            <label for="">Password(6 or more characters)</label>
+            <input type="text" class="text-input">
+            
+            <a href="" class="link Forgot-link"></a>
+
+            <button class="Join-btn">Join now</button>
+            <br>
+
+    <div class="or-divider">OR</div>
+    <!-- </hr> is used to create a straight line vertically -->
+
+            <a href="" class="link signup-link"></a>
+
+            <button class="Continue-btn">Continue with google</button>
+            <h4 class="myclass">Sign up</h4>
+        </form>
+    </div>
+</body>
+</html>
