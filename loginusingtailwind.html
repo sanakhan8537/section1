@@ -1,0 +1,41 @@
+<!-- .............................................................lectur7 -->
+ <!-- same login.html wala page we will create using tailwind.css -->
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-[url('https://t3.ftcdn.net/jpg/02/92/90/56/360_F_292905667_yFUJNJPngYeRNlrRL4hApHWxuYyRY4kN.jpg')]">          
+    <!-- h-screen means height:100vh means 100vh ki scren set ho jaegi -->
+    <div class="border-2 border-violet-200 w-1/5  p-10 rounded-xl shadow-lg ">
+        <!-- border means 1pixel thickness of border if border-2 then 2pixel thickness and given border color with ratio
+         by border-red-500 and w-full means width 100% or w-1/2 means 50% -->
+         <!-- if border-5 is not available in tailwindcss so still you can give by yourself(customized value) by writing border-[5px] -->
+          <!-- for padding we use p px for right to left and py for top to bottom pr for right pt for top etc 
+           and for margin m and my mx et same as padding property rounded-xl for the box round shadow of the box-->
+           <!-- backdrop-blur-xl can blur tha page and bg-white/60 so the form will be 60% white-->
+        <h2 class="text-center font-bold text-3xl my-8">Login Form</h2>
+
+        <form>
+            <label for="">Email Address</label>
+            <input type="text" class="block border w-full px-4 py-2 rounded mb-6 mt-1">
+            <!-- block wahi dabba and uski border dene se by fault grey color ka box ka border aaega -->
+
+            <label for="">Password</label>
+            <input type="text" class="block border w-full px-4 py-2 rounded mb-6 mt-1">
+            <a href="" class="block text-violet-500 text-right">Forgot Password</a>
+            <!-- text-right jaisa text-center hota hai wese text-right hota hai -->
+            <!-- here we are using two classes together which is link and forget link do anchor tag use hua but dono me link class same hai-->
+            <button class="block w-full p-2 bg-violet-500 hover:bg-violet-700 duration-300 text-white rounded my-6">Submit</button>
+            <!-- hover is pseudo code and there are many pseudo code so by this property when you will hover on subimit button you will its change change in darker shade
+             and can set duration also -->
+
+            <a href="" class="link signup-link">Not Registered Yet? Signup Now</a>
+        </form>
+    </div>
+    <!-- copy from login.html ye div se copy krke jab paste krenge to due to tailwind sab paragraph me simply appear hoga yaha css work in krega 
+     so we will give it desugn using tailwind css-->
+  </body>
+</html>
